@@ -1,0 +1,33 @@
+#include <bits/stdc++.h>
+
+using namespace std;
+
+
+int main() {
+    long n;
+    long hit;
+    long t;
+    long count=0;
+    cin >> n >> hit >> t;
+    vector<long> h(n);
+    for(long h_i = 0; h_i < n; h_i++){
+       cin >> h[h_i];
+    }
+    sort(h.begin(),h.end());
+    auto min=h.begin();
+    for(long i=0;i<t;i++)
+    {
+        (*min)=(*min)-hit;
+        if((*min)<=0)
+        {
+            count++;
+            min++;
+        }
+        if(min==h.end())
+        {
+            cout<<n;return 0;
+        }
+    }
+    cout<<count;
+    return 0;
+}
