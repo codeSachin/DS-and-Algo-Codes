@@ -1,3 +1,13 @@
+/*
+
+For reference of the question see the HACKERRANK WEBSITE 
+This is question of WEEK OF CODE 32 (Question number 2nd).
+it passed all test cases
+wohoooooo......
+
+*/
+
+
 #include <bits/stdc++.h>
 
 using namespace std;
